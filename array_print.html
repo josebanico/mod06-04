@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title></title>
+</head>
+<body>
+	<span id="result"></span>
+	<script type="text/javascript">
+	let row1students = ["Jose","Shaira","Jem","Earvin","Jun","Lito"];
+	// document.getElementById('result').innerHTML +=  "hello " + row1students[0] + "<br>";
+	// document.getElementById('result').innerHTML +=  "hello " + row1students[1] + "<br>";
+	// document.getElementById('result').innerHTML +=  "hello " + row1students[2] + "<br>";
+	// document.getElementById('result').innerHTML +=  "hello " + row1students[3] + "<br>";
+	// document.getElementById('result').innerHTML +=  "hello " + row1students[4] + "<br>";
+	// document.getElementById('result').innerHTML +=  "hello " + row1students[5] + "<br>";
+	for (index=0; index<row1students.length; index++){
+		document.getElementById('result').innerHTML += "Hello " + row1students[index] + "<br>";
+	}
+	for (index = row1students.length - 1; index >=0; index--){
+		document.getElementById('result').innerHTML += "Hello " + row1students[index] + "<br>";
+	}
+	</script>
+</body>
+</html>

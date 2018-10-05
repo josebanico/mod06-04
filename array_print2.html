@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title></title>
+</head>
+<body>
+	<span id="result1"></span>
+	<span id="result2"></span>
+	<hr>
+	<span id="match1"></span>
+	<span id="match2"></span>
+	<script type="text/javascript">
+	let teamcap = ["Captain America","Falcon","Hawkeye"];
+	teamcap.push("Scarlet Witch");
+	teamcap.push("Ant Man");
+	let teamiron = ["Iron Man","War Machine","Black Widow"];
+	teamiron.push("Vision");
+	teamiron.push("Spider Man");
+	for (index=0; index<teamcap.length; index++){
+		document.getElementById('result1').innerHTML += teamcap[index] + "<br>";
+	}
+
+	for (index = teamiron.length - 1;  index >=0; index--){
+		document.getElementById('result2').innerHTML += teamiron[index] + "<br>";
+	}
+	for (index = 0; index < teamcap.length; index++){
+		document.getElementById('match1').innerHTML += teamcap[index] + "vs" + teamiron[index] + "<br>";
+	}
+	</script>
+</body>
+</html>

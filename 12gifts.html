@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title></title>
+</head>
+<body>
+	<span id="lyrics"></span>
+	<script type="text/javascript">
+		let gifts = ["partridge in a pear tree", "turtle doves", "french hens", "calling birds", "golden rings", "geese a laying", "swans a swimming", "maids a milking", "ladies dancing", "lord a leaping","pipers piping", "drummers drummin"];
+		let str ="";
+		for (i = gifts.length -1; i>=0; i--){
+			if (i==0){
+				str += "and a " + gifts[i] + "<br>";
+			}else{
+
+			str += (i+1) + " " +gifts[i] + "<br>";
+
+		}
+	}
+		document.getElementById('lyrics').innerHTML=str;
+	
+
+
+	
+	</script>
+
+
+
+</body>
+</html>
